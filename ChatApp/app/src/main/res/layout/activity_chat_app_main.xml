@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ravi.chatapp.ChatAppMain">
+
+    <ListView
+        android:id="@+id/chatMessages"
+        android:layout_width="368dp"
+        android:layout_height="424dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/form"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#91f1f1f1"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatMessages">
+
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/button1"
+            android:layout_toLeftOf="@+id/sendMessageButton"
+            android:layout_weight="0.72"
+            android:ems="10"
+            android:maxHeight="80dp" />
+
+        <ImageButton
+            android:id="@+id/sendVideoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_attach_file_black_24dp"
+            android:text="d" />
+        <ImageButton
+            android:id="@+id/sendMessageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/send"
+            android:text="d" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
